@@ -44,10 +44,16 @@ nav > ul > a {
   color: white;
   font-size: 18px;
 }
+nav > ul > a >li:active{
+    color: yellow;
+}
 nav > ul > a:first-child {
   background: rgb(230, 83, 60);
   padding: 8px 20px 8px 20px;
   border-radius: 46px;
+}
+nav > ul > a:first-child:hover{
+    box-shadow: 0 0 50px cyan;
 }
 /* hero_section_start */
 .hero_section {
@@ -60,12 +66,12 @@ nav > ul > a:first-child {
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   padding-right: 10%;
 }
 .left > div > h1 {
-  font-size: 52px;
+  line-height: 80px;
+  font-size: 72px;
 }
 .left > div > h1 > span {
   font-weight: 200;
@@ -95,6 +101,21 @@ nav > ul > a:first-child {
 .left > div > div > button:first-child {
   background: rgb(230, 83, 60);
   border: none;
+}
+.left > div > div > button:first-child:hover{
+    background: rgb(180, 67, 49);
+}
+.left > div > div > button:first-child:active{
+    background: rgb(129, 50, 37);
+   
+}
+.left > div > div > button:last-child:hover{
+    background: rgb(46, 172, 67);
+    border: none;
+    box-shadow: 0 0 50px cyan;
+}
+.left > div > div > button:last-child:active{
+    background: rgb(35, 128, 50);
 }
 /* hero_section_left_end */
 /* ====================================================== */
@@ -142,7 +163,7 @@ nav > ul > a:first-child {
 }
 .btm350K {
   position: absolute;
-  bottom: 22%;
+  bottom: 18%;
   left: -10%;
   border-radius: 16px;
   height: 100px;
@@ -151,9 +172,16 @@ nav > ul > a:first-child {
   -webkit-backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.2);
   display: flex;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
+.btm350K>div:first-child{
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
 .btm350K > div > p {
   font-size: 12px;
   margin-top: 5px;
@@ -183,6 +211,7 @@ nav > ul > a:first-child {
   .hero_section > div:last-child {
     width: 100%;
   }
+  
   .left > div > div > button {
     height: 40px;
     width: 40%;
@@ -207,8 +236,17 @@ nav > ul > a:first-child {
   .top350K > div > h1 {
     font-size: 35px;
   }
-  .btm350K {
+  
+  .btm350K{
     left: 0%;
+  }
+  .btm350K>div:first-child{
+    height: 30px;
+    width: 30px;
+  }
+
+  .btm350K > div > h1 {
+    font-size: 35px;
   }
   /* header_section_end */
 }
@@ -227,6 +265,7 @@ nav > ul > a:first-child {
   .hero_section > div:last-child {
     width: 100%;
   }
+
   .left > div > div > button {
     height: 40px;
     width: 40%;
@@ -265,6 +304,7 @@ nav > ul > a:first-child {
   .hero_section > div:last-child {
     width: 100%;
   }
+
   .left > div > div > button {
     height: 40px;
     width: 30%;
@@ -273,9 +313,7 @@ nav > ul > a:first-child {
 }
 @media (min-width: 992px) {
   /* header_section_start */
-  .left > div > h1 {
-    font-size: 72px;
-  }
+
   .left > div > div > button {
     height: 40px;
     width: 30%;
@@ -288,6 +326,10 @@ nav > ul > a:first-child {
   }
   .hero_section > div:last-child {
     width: 40%;
+  }
+  .left > div > h1 {
+    line-height: 80px;
+    font-size: 80px;
   }
 
   .left > div > div > button {

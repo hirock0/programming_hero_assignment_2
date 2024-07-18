@@ -19,40 +19,78 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+:root {
+  --btn-background-color: rgb(230, 83, 60);
+}
+p {
+  color: rgba(255, 255, 255, 0.5);
+}
 header,
 main,
 footer {
+  width: 100%;
+}
+header > section,
+main > section,
+footer > section {
   width: 90%;
   margin: auto;
 }
-
+footer {
+  padding-bottom: 500px;
+}
+header {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(83, 83, 83, 0.267),
+    rgba(107, 107, 107, 0.322),
+    rgba(20, 20, 20, 0.562) 100%
+  );
+}
 nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0);
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+
+nav > section {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 20px 0;
+}
+
+nav > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
-nav > ul {
+nav > section > ul {
 }
-nav > div > h1 {
+nav > section > div > h1 {
   font-size: 36px;
-  color: rgb(230, 83, 60);
+  color: var(--btn-background-color);
   font-style: italic;
 }
-nav > ul > a {
+nav > section > ul > a {
   text-decoration: none;
   color: white;
   font-size: 18px;
 }
-nav > ul > a > li:active {
+nav > section > ul > a > li:active {
   color: yellow;
 }
-nav > ul > a:first-child {
-  background: rgb(230, 83, 60);
+nav > section > ul > a:first-child {
+  background: var(--btn-background-color);
   padding: 8px 20px 8px 20px;
   border-radius: 46px;
 }
-nav > ul > a:first-child:hover {
+nav > section > ul > a:first-child:hover {
   box-shadow: 0 0 50px cyan;
 }
 /* hero_section_start */
@@ -87,7 +125,6 @@ nav > ul > a:first-child:hover {
 }
 .left > div > p {
   margin-top: 20px;
-  opacity: 60%;
 }
 .left > div > div > button {
   height: 40px;
@@ -99,7 +136,7 @@ nav > ul > a:first-child:hover {
   border-radius: 46px;
 }
 .left > div > div > button:first-child {
-  background: rgb(230, 83, 60);
+  background: var(--btn-background-color);
   border: none;
 }
 .left > div > div > button:first-child:hover {
@@ -155,7 +192,6 @@ nav > ul > a:first-child:hover {
 .top350K > div > p {
   font-size: 12px;
   margin-top: 5px;
-  opacity: 60%;
 }
 .top350K > div > h1 {
   font-size: 40px;
@@ -176,7 +212,7 @@ nav > ul > a:first-child:hover {
   align-items: center;
 }
 .btm350K > div:first-child {
-  background: rgb(230, 83, 60);
+  background: var(--btn-background-color);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -184,7 +220,6 @@ nav > ul > a:first-child:hover {
 .btm350K > div > p {
   font-size: 12px;
   margin-top: 5px;
-  opacity: 60%;
 }
 .btm350K > div > h1 {
   font-size: 40px;
@@ -192,12 +227,131 @@ nav > ul > a:first-child:hover {
 /* hero_section_right_end*/
 
 /* hero_section_end */
+/* ==================================================================== */
+/* main_section_start */
+main {
+  margin-top: 100px;
+}
+.main_section_1 {
+}
+.main_section_1 > div {
+}
+/* top_section_start */
+.main_section_1_top {
+}
+.main_section_1_top_insideDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_section_1_top_insideDiv > div > h1 {
+  text-align: center;
+}
+.main_section_1_top_insideDiv > div > p {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 50px 0 50px;
+}
+.main_section_1_top_insideDiv > div > h1 {
+  font-size: 40px;
+}
+/* top_section_end */
+/* ================================ */
+
+/* mid_section_start */
+.main_section_1_middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_section_1_middle > div {
+  display: grid;
+  margin: 50px 0 50px 0;
+  gap: 40px;
+}
+.main_section_1_middle > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_section_1_middle > div > div > img {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+.main_section_1_middle > div > div > div {
+  margin-top: 20px;
+}
+.main_section_1_middle > div > div > div > h1 {
+  text-align: center;
+}
+.main_section_1_middle > div > div > div > p {
+  text-align: center;
+}
+.main_section_1_middle > div > div > div > p {
+  font-size: 12px;
+}
+/* mid_section-end */
+/* ======================================= */
+/* bottom_section_start */
+
+.main_section_1_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+}
+.main_section_1_bottom > div {
+  width: 100%;
+}
+.main_section_1_bottom > div:first-child > h1 {
+  font-size: 48px;
+}
+.main_section_1_bottom > div:first-child > p {
+  font-size: 14px;
+  margin-top: 28px;
+}
+.main_section_1_bottom > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 50px;
+}
+.main_section_1_bottom > div:last-child > img {
+  border-radius: 16px;
+  width: 100%;
+  width: 100%;
+}
+.main_section_1_bottom > div > button {
+  background: var(--btn-background-color);
+  height: 40px;
+  width: 40%;
+  border: none;
+  color: white;
+  border-radius: 46px;
+  margin-top: 20px;
+}
+.main_section_1_bottom > div > button:hover {
+  background: rgb(209, 75, 54);
+  box-shadow: 0 0 50px rgb(0, 255, 255);
+}
+.main_section_1_bottom > div > button:active {
+  background: rgb(151, 52, 37);
+}
+/* bottom_section_end */
+
+/* main_section_end */
+
 /* ====================================== */
 /* responsive_section_start */
 
 @media (max-width: 576px) {
   /* header_section_start */
-  nav > ul {
+  nav > section > ul {
     display: none;
   }
   .hero_section {
@@ -210,11 +364,14 @@ nav > ul > a:first-child:hover {
   .hero_section > div:last-child {
     width: 100%;
   }
+  .hero_section {
+    margin-top: 40px;
+  }
 
   .left > div > div > button {
     height: 40px;
-    width: 40%;
     font-size: 12px;
+    width: 80%;
   }
   .left > div > h1 {
     line-height: 50px;
@@ -249,11 +406,24 @@ nav > ul > a:first-child:hover {
     font-size: 35px;
   }
   /* header_section_end */
+  /* ================================ */
+  /* main_section_start */
+  .main_section_1_bottom > div:first-child > h1 {
+    font-size: 30px;
+  }
+  .main_section_1_bottom > div:first-child > p {
+    font-size: 12px;
+  }
+  .main_section_1_bottom > div > button {
+    width: 100%;
+    height: 40px;
+  }
+  /* main_section_end */
 }
 
 @media (min-width: 576px) {
   /* header_section_start */
-  nav > ul {
+  nav > section > ul {
     display: none;
   }
   .hero_section {
@@ -280,11 +450,20 @@ nav > ul > a:first-child:hover {
     width: 30%;
   }
   /* header_section_end */
+  /* ======================================================== */
+
+  /* main_section_start */
+  /* main_mid_start */
+
+  /* main_mid_end */
+  /* ======================= */
+
+  /* main_section_end */
 }
 
 @media (min-width: 768px) {
   /* header_section_start */
-  nav > ul {
+  nav > section > ul {
     display: block;
     display: flex;
     list-style: none;
@@ -292,7 +471,7 @@ nav > ul > a:first-child:hover {
     width: 50%;
     justify-content: space-between;
   }
-  nav > img {
+  nav > section > img {
     display: none;
   }
   .hero_section {
@@ -310,7 +489,20 @@ nav > ul > a:first-child:hover {
     width: 30%;
   }
   /* header_section_end */
+  /* ======================================================== */
+
+  /* main_section_start */
+  /* main_mid_start */
+  .main_section_1_middle > div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* main_mid_end */
+  /* ======================= */
+
+  /* main_section_end */
 }
+
 @media (min-width: 992px) {
   /* header_section_start */
 
@@ -347,4 +539,38 @@ nav > ul > a:first-child:hover {
     width: 45%;
   }
   /* header_section_end */
+  /* ======================================================== */
+
+  /* main_section_start */
+
+  /* main_top_section_start */
+  .main_section_1_top_insideDiv > div > h1 {
+    font-size: 48px;
+  }
+
+  /* main_top_section_end */
+  /* =========================== */
+  /* main_mid_start */
+  .main_section_1_middle > div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* main_mid_end */
+  /* ======================= */
+  /* main_bottom-start */
+  .main_section_1_bottom {
+    flex-direction: row;
+  }
+  .main_section_1_bottom > div {
+    width: 48%;
+  }
+  .main_section_1_bottom > div:last-child {
+    margin-top: 0px;
+  }
+  .main_section_1_bottom > div > button {
+    margin-top: 50px;
+  }
+  /* main_bottom-end */
+
+  /* main_section_end */
 }

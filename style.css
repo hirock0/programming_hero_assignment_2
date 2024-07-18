@@ -8,7 +8,8 @@
 }
 html,
 body {
-  background-color: black;
+  background: black;
+
   color: white;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -44,7 +45,7 @@ header {
   width: 100%;
   background: linear-gradient(
     180deg,
-    rgba(83, 83, 83, 0.267),
+    rgb(0, 0, 0),
     rgba(107, 107, 107, 0.322),
     rgba(20, 20, 20, 0.562) 100%
   );
@@ -62,14 +63,12 @@ nav > section {
   width: 90%;
   margin: auto;
   padding: 20px 0 20px 0;
-}
-
-nav > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
+
 nav > section > ul {
 }
 nav > section > div > h1 {

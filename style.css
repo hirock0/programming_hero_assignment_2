@@ -44,16 +44,16 @@ nav > ul > a {
   color: white;
   font-size: 18px;
 }
-nav > ul > a >li:active{
-    color: yellow;
+nav > ul > a > li:active {
+  color: yellow;
 }
 nav > ul > a:first-child {
   background: rgb(230, 83, 60);
   padding: 8px 20px 8px 20px;
   border-radius: 46px;
 }
-nav > ul > a:first-child:hover{
-    box-shadow: 0 0 50px cyan;
+nav > ul > a:first-child:hover {
+  box-shadow: 0 0 50px cyan;
 }
 /* hero_section_start */
 .hero_section {
@@ -71,7 +71,7 @@ nav > ul > a:first-child:hover{
 }
 .left > div > h1 {
   line-height: 80px;
-  font-size: 72px;
+  font-size: 78px;
 }
 .left > div > h1 > span {
   font-weight: 200;
@@ -102,20 +102,19 @@ nav > ul > a:first-child:hover{
   background: rgb(230, 83, 60);
   border: none;
 }
-.left > div > div > button:first-child:hover{
-    background: rgb(180, 67, 49);
+.left > div > div > button:first-child:hover {
+  background: rgb(180, 67, 49);
 }
-.left > div > div > button:first-child:active{
-    background: rgb(129, 50, 37);
-   
+.left > div > div > button:first-child:active {
+  background: rgb(129, 50, 37);
 }
-.left > div > div > button:last-child:hover{
-    background: rgb(46, 172, 67);
-    border: none;
-    box-shadow: 0 0 50px cyan;
+.left > div > div > button:last-child:hover {
+  background: rgb(46, 172, 67);
+  border: none;
+  box-shadow: 0 0 50px cyan;
 }
-.left > div > div > button:last-child:active{
-    background: rgb(35, 128, 50);
+.left > div > div > button:last-child:active {
+  background: rgb(35, 128, 50);
 }
 /* hero_section_left_end */
 /* ====================================================== */
@@ -176,12 +175,12 @@ nav > ul > a:first-child:hover{
   justify-content: center;
   align-items: center;
 }
-.btm350K>div:first-child{
-    background: rgb(230, 83, 60);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-  }
+.btm350K > div:first-child {
+  background: rgb(230, 83, 60);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
 .btm350K > div > p {
   font-size: 12px;
   margin-top: 5px;
@@ -211,7 +210,7 @@ nav > ul > a:first-child:hover{
   .hero_section > div:last-child {
     width: 100%;
   }
-  
+
   .left > div > div > button {
     height: 40px;
     width: 40%;
@@ -236,11 +235,12 @@ nav > ul > a:first-child:hover{
   .top350K > div > h1 {
     font-size: 35px;
   }
-  
-  .btm350K{
+
+  .btm350K {
     left: 0%;
+    bottom: 30%;
   }
-  .btm350K>div:first-child{
+  .btm350K > div:first-child {
     height: 30px;
     width: 30px;
   }

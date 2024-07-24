@@ -913,14 +913,17 @@ footer {
   .main_section_3_right > div > h1 {
     font-size: 25px;
   }
-  .main_section_4_top > h1 {
-    font-size: 40px;
-  }
 
   /* section_3_end */
 
   /* =========================== */
   /* section_4_start */
+  .main_section_4_top > p {
+    width: 100%;
+  }
+  .main_section_4_top > h1 {
+    font-size: 40px;
+  }
 
   .main_section_4_grid_part > div:nth-child(1),
   .main_section_4_grid_part > div:nth-child(4) {

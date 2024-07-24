@@ -682,7 +682,12 @@ main {
 }
 
 .main_section_4_grid_part > div:nth-child(1) {
-  background: url("./images/trainer1.png");
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.116),
+      rgba(0, 0, 0, 0.116),
+      rgba(0, 0, 0, 0.116)
+    ),
+    url("./images/trainer1.png");
 }
 .main_section_4_grid_part > div:nth-child(2) {
   background: url("./images/trainer2.png");
@@ -708,7 +713,12 @@ main {
   overflow: hidden;
   padding: 20px;
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  justify-content: end;
+  gap: 5px;
+}
+.main_section_4_grid_part > div > p {
+  font-size: 17px;
 }
 
 /* main_section_4_end */
@@ -874,15 +884,15 @@ footer {
   .main_section_2_top > div > div:last-child {
     grid-template-columns: 0.9fr 1fr;
   }
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
-  padding: 10px;
-  font-size: 10px;
-}
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    padding: 10px;
+    font-size: 10px;
+  }
   .main_section_2_top > h1 {
     font-size: 40px;
   }
@@ -912,6 +922,10 @@ footer {
   /* =========================== */
   /* section_4_start */
 
+  .main_section_4_grid_part > div:nth-child(1),
+  .main_section_4_grid_part > div:nth-child(4) {
+    display: none;
+  }
   /* section_4_end */
   /* main_section_end */
   /* ======================= */
@@ -988,14 +1002,14 @@ footer {
     height: 300px;
   }
   .img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
-  padding: 10px;
-  font-size: 10px;
-}
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    padding: 10px;
+    font-size: 10px;
+  }
 
   /* ======================= */
 
@@ -1055,14 +1069,14 @@ footer {
     height: 400px;
   }
   .img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
-  padding: 10px;
-  font-size: 12px;
-}
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    padding: 10px;
+    font-size: 12px;
+  }
 
   .main_section_4_grid_part {
     grid-template-columns: 1fr 1fr;
@@ -1187,14 +1201,14 @@ footer {
   }
 
   .img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
-  padding: 30px;
-  font-size: 12px;
-}
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    padding: 30px;
+    font-size: 12px;
+  }
   /* section_2_end */
   /* ======================== */
   /* section_3_start */
